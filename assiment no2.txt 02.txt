@@ -1,0 +1,15 @@
+#Construct a program to store vendor details (name, year of association, contact number, email ID).
+#Read monthly purchases and generate an annual purchase/billing report.
+
+name = input("Vendor Name: ")
+year = input("Year: ")
+contact = input("Contact: ")
+email = input("Email: ")
+
+total = 0
+for i in range(12):
+    amt = float(input("Enter monthly purchase: "))
+    total = total + amt
+
+print("Vendor:", name)
+print("Annual Purchase:", total)

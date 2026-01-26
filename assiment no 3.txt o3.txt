@@ -1,0 +1,21 @@
+# a) Write a program to calculate current using Ohm’s Law.
+# b) Display nature of current:
+
+# < 0.5 A → Low current
+
+# 0.5 A to 2 A → Normal current
+
+# 2 A → High current
+
+voltage = float(input("Enter Voltage (V): "))
+resistance = float(input("Enter Resistance (R): "))
+
+current = voltage / resistance
+print("Current:", current, "A")
+
+if current < 0.5:
+    print("Low current")
+elif current <= 2:
+    print("Normal current")
+else:
+    print("High current")
